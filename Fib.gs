@@ -14,7 +14,6 @@ function doPost(e) {
   if (userMessage.toLowerCase() == 'help') {
     rMes = '0以上の整数値xを送信するとx番目のフィボナッチ数を返信します．';
   } else {
-    x = Number(userMessage)
     if (isNaN(x = Number(userMessage)) || x < 0)
       rMes = '0以上の整数値を送信して下さい．';
     else
